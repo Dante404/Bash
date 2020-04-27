@@ -29,7 +29,7 @@ done
 else
 for i in $(eval echo "{$START..$END}")
 do
-proxychains hydra -l test -p test -vV -F $IP ftp
+proxychains hydra -l test -p test -vV -F $IP $protokol
 service tor reload
 done
 fi
